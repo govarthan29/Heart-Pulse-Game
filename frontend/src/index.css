@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  background-color: #bfdfff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 5px 0;
+  box-sizing: border-box;
+}
+
+.User_name {
+  padding: 0px 40px;
+  font-weight: bold;
+  font-family: 'Agbalumo', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #000000;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0px 70px;
+  display: flex;
+  gap: 20px;
+}
+
+.cust-link {
+  text-decoration: none;
+  padding: 0px 20px;
+  font-family: 'Agbalumo', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.cust-link:hover{
+  color: #2d57ff;
+}
+
+.active-link {
+  color: #2d57ff; /* Highlight color for active page */
+  text-decoration: none;
+}
+
+.active-link:hover {
+  color: #2d57ff;
+}
+
+.coin-counter {
+  display: flex;
+  align-items: center;
+}
+
+.coin-icon {
+  margin-left: 150px;
+  width: 50px;
+  height: 50px;
+  margin-right: 7px;
+  margin-top: 6px;
+}
+
+.coin-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-right: 25px;
+  color: #2d57ff;
+}

@@ -1,0 +1,322 @@
+.gamebg {
+    position: fixed; 
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;  
+    background-position: center; 
+    background-repeat: no-repeat; 
+    z-index: -1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gamebg h3{
+    font-size: 2.5rem;
+    color:#000;
+    font-family: 'Agbalumo', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.heart-image {
+  position: absolute;
+  right: 1px;
+  bottom: 150px;
+  width: 700px;
+  height: 400px;
+  animation: heartbeat 2s infinite;
+}
+
+ @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.1);
+      }
+      40% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(1.15);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+.con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: -90px;
+}
+
+.main-title {
+  font-family: 'Bangers', cursive;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.start-button {
+  width: 30vh;
+  height: 3rem;
+  font-family: 'Agbalumo', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 234px;
+  margin-right: 290px;
+  padding: 10px;
+  font-size: 2.2rem;
+  background-color: #578fff;  
+  color: white;
+  border: 2px solid #000;
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 5px 8px 8px rgba(50, 50, 50, 0.9),
+              8px 6px 7px rgba(50, 50, 50, 0.2),
+              8px 8px 9px rgba(0, 0, 0, 0.5);
+}
+
+.start-button:hover {
+  background-color: #0055ff;
+  height: 4rem;
+  font-size: 2.3rem;
+  box-shadow: 
+      3px 3px 0px #000,  
+      5px 5px 0px #333,  
+      7px 7px 7px rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}
+
+/* Reduce button height and spacing */
+.gameButton {
+  width: 300px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-bottom: -5px;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.Game-link {
+    font-family: 'Agbalumo', sans-serif;
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #000;
+    text-shadow: 1px 1px 2px #fff;
+    text-align: center;
+    width: 270px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+    font-family: 'Agbalumo', cursive;
+    line-height: 1.4;
+    background-color: rgba(87, 143, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border: 2px solid #000000;
+}
+
+/* Hover & active effects for game buttons */
+.gameButton:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.gameButton:active {
+    transform: scale(0.95);
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px; /* space between gameBoard and ScoreWrapper */
+  width: 100%;
+  padding: 20px;
+  margin-top: -60px;
+}
+
+.ScoreWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 80px;
+}
+
+/* Each individual score block */
+.ScoreBox {
+  background: #81bcff;
+  width: 120px;
+  padding: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+  font-family: 'Agbalumo', cursive;
+  line-height: 1.4;
+  background-color: rgba(87, 143, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border: 2px solid #000000;
+}
+
+.gameBoard {
+    width: 700px;
+    height: 400px;
+    margin-top: 7vh;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+}
+
+.customInput {
+    height: 3rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 540px;
+    font-size: 1rem;
+    border: 2px solid #499eff;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.customSubmitButton {
+    background-color: #499eff;  
+    height: 3rem;
+    font-family: 'Agbalumo';
+    text-transform: uppercase;
+    width: 68vh;
+    margin-left: 336px;
+    padding: 20px;
+    font-size: 2rem;
+    color: white;
+    margin-right: 205px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hover effect for game links */
+.Game-link:hover {
+    color: #ffffff;
+    text-shadow: 7px 7px 9px rgba(0, 0, 0, 0.7);
+}
+
+.profile-container1 {
+  width: 60%;
+  height: 90%;
+  margin: 16vh auto;
+  padding: 20px;
+  background: #81bcff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  backdrop-filter: blur(10px); /* Background blur effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 52px;
+  margin-left: 300px;
+  border: 2px solid #000000;
+  background-color: rgba(87, 143, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.profile-container h3 {
+  font-size: 2.5rem;
+  color:#000;
+  font-family: 'Agbalumo', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+
+.customTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Agbalumo', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.customTable thead {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  background: rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* Scrollable body */
+.customTable tbody {
+  display: block;
+  font-size: 30px;
+  max-height: 400px;
+  overflow-y: auto;
+  width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.customTable tbody::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.customTable tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.customTable th, 
+.customTable td {
+  padding: 16px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.customTable tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.15);
+}
+

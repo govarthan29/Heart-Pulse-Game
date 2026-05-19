@@ -1,0 +1,276 @@
+.bg {
+  position: fixed; 
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.Homebg {
+  position: fixed; 
+  top: 1px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;  
+  background-position: center; 
+  background-repeat: no-repeat; 
+  z-index: -1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.GameTitle {
+  position: absolute;
+  top: 10%;
+  left: 200px;
+  margin-left: 40px;
+  z-index: 1;
+  text-align: left;
+}
+
+.GameTitle h1 {
+  font-size: 5.4rem;
+  color: #1E90FF;
+  letter-spacing: 3px;
+  margin-top: 195px;
+  margin-left: 84px;
+  font-family: 'Agbalumo', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  animation: glowingText 3s infinite ease-in-out;
+}
+
+.GameTitle .subtitle {
+  font-size: 2.3rem;
+  color: #000000;
+  font-family: 'Agbalumo', sans-serif;
+  margin-top: -75px;
+  margin-left: 193px;
+}
+
+/* Glowing Text Animation */
+@keyframes glowingText {
+  0% {
+      text-shadow: 
+          2px 2px 0px #000,  
+          4px 4px 0px #333,  
+          6px 6px 5px rgba(0, 0, 0, 0.7);
+      transform: translateY(0);
+  }
+  50% {
+      text-shadow: 
+          6px 6px 6px #000,  
+          8px 8px 8px #333,  
+          10px 10px 10px rgba(0, 0, 0, 0.9);
+      transform: translateY(-2px);
+  }
+  100% {
+      text-shadow: 
+          2px 2px 0px #000,  
+          4px 4px 0px #333,  
+          6px 6px 5px rgba(0, 0, 0, 0.7);
+      transform: translateY(0);
+  }
+}
+
+h1 {
+  color: #000;  
+  font-family: 'Agbalumo', sans-serif;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 21vh;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+  /* animation: glowingText 3s infinite ease-in-out; */
+}
+
+.Heading {
+  margin-top: 18vh;
+}
+
+label {
+  display: block;
+  color: #000000;  
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.custom-link {
+  color: #0055ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  margin-left: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-link:hover {
+  color: #0055ff;
+  font-size: 1.8rem;
+}
+
+.signup-form {
+  margin: -20px 189px 151px -140px ;
+}
+
+input {
+  width: 68vh;
+  height: 3rem;
+  padding: 10px;
+  margin: 7px;
+  margin-left: 46vh;
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 2px solid #578fff;
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+.signup-input {
+  box-shadow: 5px 8px 8px rgba(50, 50, 50, 0.9),
+              8px 6px 7px rgba(50, 50, 50, 0.2),
+              8px 8px 9px rgba(0, 0, 0, 0.5);
+}
+
+.signup-input:hover {
+  border-color: #578fff;
+  height: 4rem;
+  box-shadow: 
+      3px 3px 0px #000,  
+      5px 5px 0px #333,  
+      7px 7px 7px rgba(0, 0, 0, 0.9);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.signup-button {
+  width: 40vh;
+  height: 4rem;
+  margin-left: 60vh;
+  font-family: 'Agbalumo', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 2rem;
+  background-color: #578fff;  
+  color: white;
+  border: 2px solid #000;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 5px 8px 8px rgba(50, 50, 50, 0.9),
+              8px 6px 7px rgba(50, 50, 50, 0.2),
+              8px 8px 9px rgba(0, 0, 0, 0.5);
+}
+
+/* Sign-Up Button Hover Effect */
+.signup-button:hover {
+  background-color: #0055ff;
+  height: 4rem;
+  font-size: 2rem;
+  box-shadow: 
+      3px 3px 0px #000,  
+      5px 5px 0px #333,  
+      7px 7px 7px rgba(0, 0, 0, 0.9);
+  transform: scale(1.15);
+}
+
+.profile-container {
+  width: 50%;
+  height: 50%;
+  margin: 20vh auto;
+  padding: 20px;
+  background: #81bcff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  backdrop-filter: blur(10px); /* Background blur effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 340px;
+  border: 2px solid #000000;
+  background-color: rgba(87, 143, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.profile-table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+  margin-bottom: 60px;
+}
+
+.profile-table th {
+  padding: 10px;
+  text-align: left;
+}
+
+.profile-table img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container h3 {
+  font-size: 2.5rem;
+  color:#000;
+  font-family: 'Agbalumo', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.profile-container p {
+  font-size: 2rem;
+  color: #333;
+  font-family: 'Agbalumo', sans-serif;
+  font-weight: normal;
+  margin: 30px 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.profile-container p strong {
+  color: #222;
+  font-weight: normal;
+  font-family: 'Agbalumo', sans-serif;
+}
+
+.login-container {
+  width: 36%;
+  height: 60%;
+  margin-top: 12vh;
+  margin-left: 66vh;
+  background-color: rgba(87, 143, 255, 0.2);
+  border: 2px solid #000000;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
